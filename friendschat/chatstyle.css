@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#040228 0%,#071d2e 40%);
+    min-height: 100vh;
+   
+}
+
+
+.wrapper{
+    
+    background: #000;
+    border: 1px solid #0ef;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow:
+     0 0 10px #0ef,
+    0 0 20px #0ef,
+    0 0 40px #0ef,
+    0 0 80px #0ef,
+    0 0 160px #0ef;
+}
+
+.form{
+    padding: 25px 30px;
+}
+.form header{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+label{
+    color: #0ef;
+   
+}
+input{
+
+    background: #000;
+    color: #0ef;
+  
+}
+.form form{
+    padding: 20px 0;
+}
+.form form .error-txt{
+    color: #0ef;
+    background: rgb(2, 26, 28);
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(72, 94, 95);
+    display: none;
+
+}
+.form form .name-dateils{
+
+}
+.form form .name-dateils.field:first-child{
+    margin-right: 10px;
+}
+.form form .field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form form .field input{
+outline: none;
+}
+.form form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#b1{
+    width: 180px;
+    position: relative;
+    top: -70px;
+    left: 200px;
+    margin-left: 10px;
+}
+
+#b2{
+    width: 190px;
+    position: relative;
+    top: -2px;
+}
+.field{
+    position: relative;
+    top: -70px;
+}
+.form form .image input{
+font-size: 17px;
+transition: 0.4s;
+
+
+}
+
+.form form .button input{
+    margin-top: 23px;
+    height: 45px;
+    border: 1px solid #0ef;
+    font-size: 17px;
+    font-weight: 400;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+.form form .button input:hover{
+    background: #0ef;
+    border: 1px solid #fff;
+    color: #000;
+    box-shadow:
+    0 0 10px #0ef,
+   0 0 20px #0ef,
+   0 0 40px #0ef,
+   0 0 80px #0ef,
+   0 0 160px #0ef;
+
+}
+.form .link{
+    text-align: center;
+   position: relative;
+   top: -20px;
+   font-size: 17px;
+}
+.form .link a{
+    color: #fff;
+}
+.form .link a:hover{
+    color: #0ef;
+    text-decoration: underline;
+}
+@media only screen and ( max-width:500px)
+{
+    #b1{
+         width: 140px;
+    }
+}
+.form form  .field i{
+    position: absolute;
+    right: 15px;
+    top: 65%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.form form  .field i.active::before{
+    color: #ccc;
+    content: "\f070";
+}
+/* user area css code*/
+
+.users {
+    padding: 25px 30px;
+}
+.users header ,
+.user-list a{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #0ef;
+}
+.users header .content img{
+
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 15px;
+  
+}
+.wrapper img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+:is(.users,.user-list) .content 
+{
+    display: flex;
+    position: relative;
+    align-items:center;
+
+}
+:is(.users,.user-list) .details{
+    margin-left: 15px;
+}
+:is(.users,.user-list) .details span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.users header .logout{
+   color: #000;
+   font-size: 17px;
+   background: #0ef;
+   padding: 7px 15px;
+   border-radius: 5px;
+
+}
+.search .text{
+    position: relative;
+    top: 20px;
+    font-size: 18px;
+}
+
+.users .search input{
+    position: absolute;
+    height: 42px;
+    width: calc(100% - 70px);
+    border: 1px solid #0ef;
+    padding: 0 13px;
+    font-size: 16px;
+    border-radius: 5px  ;
+    outline: none;
+    position: relative;
+    left: -30px;
+    top: -10px;
+    opacity: 0;
+    pointer-events: none;
+    transition:  all 0.3s ease;
+
+   
+    
+}
+.users .search input.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.users .search button{
+    width: 47px;
+    height: 42px;
+    border: none;
+    outline: none;position: relative;
+    left: -30px;
+    top: -15px;
+    border: 1px solid #0ef ;
+    background: transparent;
+   color: #000 ;
+   border-radius: 5px;
+   font-size: 17px;
+   transition:  all 0.2s ease;
+}
+.users .search button:hover{
+   background:#1c1b1b;
+    color: #000;
+    box-shadow: 
+    0 0 10px #0ef,
+    0 0 20px #0ef,
+    0 0 40px #0ef;
+  ;
+}
+.users .search button.active{
+    color: #0ef;
+    background: #000;
+    border: none;
+  
+}
+.users .search button.active i::before{
+    content: "\f00d";}
+#bb{
+    color: #000;
+}
+#aa{
+    position: relative;
+    left: 400px;
+    top: -60px;
+}
+.user-list{
+max-height: 350px;
+overflow-y: auto;
+}
+.user-list a{
+    padding-right: 15px;
+    margin-bottom: 10px;
+    page-break-after: 10px;
+    border-bottom-color: #000 ;
+
+}
+.user-list a:hover{
+    background: #231c1c;
+}
+.user-list a .content img{
+height: 40px;
+width: 40px;
+position: relative;
+left: 20px;
+margin: 10px;
+}
+.user-list a .status-dot{
+    font-size: 15px;
+    color: #0ef;
+   
+}
+.user-list a:last-child{
+    border: none;
+    margin-bottom: 0px;
+}
+@media only screen and ( max-width:400px)
+{
+    *{
+        font-size: 10px;
+    }
+.wrapper{
+   
+    width: 500px;
+
+}
+#aa{
+   position: relative;
+   left: 300px;
+}
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    color: #0ef;
+}
+:is(.user-list,.chet-box)::-webkit-scrollbar{
+
+}
+.user-list a .content p{
+    color: #67676a;
+}
+#aa{
+    color: #0ef;
+}
+/* PHP*/
+
+#aa.offline{
+    color: #ccc;
+}
+/* CHAT AREA CSS CODE*/
+
+.chat-area header{
+    display: flex;
+    align-items: center;
+    padding: 18px 30px ;
+}
+.chat-area header img {
+    width: 45px;
+    height: 45px;
+    margin: 0 15px;
+}
+.chat-area header .back-icon{
+    font-size: 18px;
+  
+    
+
+}
+.chat-area span{
+    font-size: 17px;
+    font-weight: 500;
+}
+.chat-area p{
+    margin-top: 5px;
+}
+.chet-box{
+    overflow-y: auto;
+    background: #1c1b1b;
+    height: 500px;
+    padding: 10px 20px 10px 30px;
+    box-shadow: inset 0 32px -32px 32px rgb(0 0 0 / 5%),
+                inset 0 32px -32px 32px rgb(0 0 0 / 5%);
+}
+
+.chet-box .chat p{
+    word-wrap: break-word;
+    padding: 8px 16px;
+    box-shadow:  0 0 32px rgba(0, 0, 0, 0.08),
+                 0 16px 16px -16px rgb(0 0 0 / 10%);
+}
+.chet-box .outgoing{
+    display:flex ;
+}
+.chet-box .chat{
+    margin-top: 15px;
+}
+.outgoing .details p{
+    background: rgb(19, 183, 195);
+    color: #fff;
+    border-radius: 18px 18px 0 18px;
+}
+.outgoing .details{
+    max-width: calc(100% - 130px);
+    margin-left: auto;
+}
+.chet-box .incoming{
+    display: flex;
+    align-items:flex-end;
+}
+.chet-box .incoming p{
+    position: relative;
+    left: -15px;
+}
+.chet-box .incoming img{
+    height: 35px;
+    width: 35px;
+    
+}
+.incoming .details{
+    margin-left: 15px;
+    max-width: calc(100% - 130px);
+    margin-right: auto;
+}
+.incoming .details p{
+    border-radius: 18px 18px 18px 0;
+    color: #fff;
+    background: #777676;
+}
+.chat-area .typing-area{
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.typing-area input{
+    height: 45px;
+    width: calc(100% - 58px );
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #fff;
+
+}
+.typing-area button{
+
+    width: 55px;
+    border: none;
+    outline: none;
+    background: #ede7e7;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: 0.4s;
+}
+.typing-area button:hover{
+    background: #0ef;
+    color: #000;
+    border: 2px solid #fff;
+}
+@media only screen and ( max-width:360px){
+    .typing-area button{
+        font-size: 25px;
+    }
+}
